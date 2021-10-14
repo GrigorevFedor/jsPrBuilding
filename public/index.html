@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" id="form1">
+        <label><input type="radio" name="radio1" value="calc" checked/>Калькулятор дат</label>
+        <label><input type="radio" name="radio1" value="timer"/>Таймер</label>
+    </form>    
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+    <form id="timer" class="hidden">
+        <h3>Таймер</h3>
+        <div class="timer">
+            <div class="hours">
+                <p class="hours-p">00</p>
+                <div class="hours-btns">
+                    <button class="btn-up">/\</button>
+                    <button class="btn-down">\/</button>
+                </div>
+            </div>
+            <div class="minutes">
+                <p class="minutes-p">00</p>
+                <div class="minutes-btns">
+                    <button class="btn-up">/\</button>
+                    <button class="btn-down">\/</button>
+                </div>
+            </div>
+            <div class="seconds">
+                <p class="seconds-p">00</p>
+                <div class="seconds-btns">
+                    <button class="btn-up">/\</button>
+                    <button class="btn-down">\/</button>
+                </div>
+            </div>
+        </div>
+        <button class="start" type="submit">Старт</button>
+    </form>     
+</body>
+</html>
